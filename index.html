@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Countdown</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Event Countdown</h1>
-        <p>Enter your event details:</p>
-        <input type="text" id="event-name" placeholder="Event Name">
-        <input type="date" id="event-date">
-        <button id="start-countdown">Start Countdown</button>
-
-        <div class="countdown" id="countdown">
-            <h2 id="event-title">Your Event</h2>
-            <div id="time">
-                <div><span id="days">0</span> Days</div>
-                <div><span id="hours">0</span> Hours</div>
-                <div><span id="minutes">0</span> Minutes</div>
-                <div><span id="seconds">0</span> Seconds</div>
-            </div>
-        </div>
-    </div>
-    <script src="js/script.js"></script>
-</body>
-</html>
+<button id="test-button">Click Me</button>
+<script>
+    document.getElementById('test-button').addEventListener('click', () => {
+        alert('Button clicked!');
+    });
+</script>
