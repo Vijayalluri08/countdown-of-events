@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('start-countdown').addEventListener('click', () => {
     const eventName = document.getElementById('event-name').value.trim();
     const eventDate = new Date(document.getElementById('event-date').value);
@@ -19,6 +20,7 @@ document.getElementById('start-countdown').addEventListener('click', () => {
         if (timeDiff <= 0) {
             countdown.innerHTML = `<h2>${eventName} has started!</h2>`;
             clearInterval(interval);
+	    console.log(`Time remaining: ${days}d ${hours}h ${minutes}m ${seconds}s`);
             return;
         }
 
@@ -36,3 +38,5 @@ document.getElementById('start-countdown').addEventListener('click', () => {
     updateCountdown(); // Update immediately
     const interval = setInterval(updateCountdown, 1000);
 });
+});
+
